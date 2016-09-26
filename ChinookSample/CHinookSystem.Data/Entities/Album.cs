@@ -4,7 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-#region Additional Namespaces
+//Annotations are for the entities
+#region Additional Namespaces           
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 #endregion
@@ -14,7 +15,7 @@ namespace CHinookSystem.Data.Entities
 
     //point to the sql table that this file maps
     [Table("Albums")]
-    public class Album
+    public class Album //use singular because it defines a singular instance.
     {
         //Key notation is optional if the sql pkey ends in ID or Id
         //Required if default of entity is not entity
