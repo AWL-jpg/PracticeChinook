@@ -70,6 +70,27 @@
                             </ul>
                         </LoggedInTemplate>
                     </asp:LoginView>
+                    <asp:Menu ID="navMenu" runat="server"
+                        BackColor ="#000000" BorderColor="Red"
+                        StaticMenuItemStyle-ForeColor="#999999"
+                        StaticMenuItemStyle-VerticalPadding="10px"
+                        StaticMenuItemStyle-HorizontalPadding="10px"
+                        RenderingMode="List" Orientation="Horizontal"
+                        DynamicMenuItemStyle-ForeColor="#999999"
+                        DynamicMenuStyle-BackColor="Black">
+
+                        <Items>
+                            <asp:MenuItem Text="Home" NavigateUrl="~/"></asp:MenuItem>
+
+
+                            <asp:MenuItem Text="Queries" Value="linq">
+                                <asp:MenuItem Text="First Sample 1" NavigateUrl="~/Queries/FirstSample"></asp:MenuItem>
+                            </asp:MenuItem>
+
+                            <asp:MenuItem Text="About" NavigateUrl="~/About"></asp:MenuItem>
+                            <asp:MenuItem Text="Contact" NavigateUrl="~/Contact"></asp:MenuItem>
+                        </Items>
+                    </asp:Menu>
                 </div>
             </div>
         </div>
