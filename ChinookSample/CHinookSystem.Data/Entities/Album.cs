@@ -45,7 +45,7 @@ namespace CHinookSystem.Data.Entities
 
         public virtual ICollection<Track> Tracks { get; set; }
 
-        public virtual Artist Atrists { get; set; }
+        public virtual Artist Artists { get; set; }
 
     }
 }
